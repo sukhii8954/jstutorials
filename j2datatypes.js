@@ -102,3 +102,6 @@
     
   console.log("2"===2) ;// here it strictly check the value and its datatype also
   console.log("2"==2); // here it convert string into int and gives true 
+
+
+ 
