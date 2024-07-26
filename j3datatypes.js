@@ -63,3 +63,5 @@ const ismyfunc = function(){
 }
 
 ismyfunc();
+
+console.log(typeof (DC))
