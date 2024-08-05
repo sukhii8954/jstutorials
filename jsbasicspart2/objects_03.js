@@ -45,3 +45,21 @@ const {courename: language} = course;
 //      {}, 
 //      {}
 // ]
+
+let a = "hello";
+{
+    let a = "hello second";
+    console.log(a);
+}
+console.log(a);
+
+
+var ab = "hello first";
+   
+{
+
+      var ab = "hello first second";
+      console.log(ab);
+}
+
+console.log(ab);

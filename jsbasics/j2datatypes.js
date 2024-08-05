@@ -32,7 +32,7 @@
 
 // // let intonumber =Number(num)
 // // console.log(intonumber)   // NaN not a number  it is also a special type 
-// // // indeed it oul get converted n number but its value is not a pure number
+// // // indeed it will get converted n number but its value is not a pure number
 // // console.log(typeof intonumber)
 
 // // "22" -> 22
