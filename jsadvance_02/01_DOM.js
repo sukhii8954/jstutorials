@@ -105,3 +105,37 @@ myh1[0].style.color= 'red'
 
  
  */
+
+/*
+  const temp  = document.querySelectorAll('item')
+    
+   --> we get temp as Nodelist on which we can apply 
+       forEach loop to alter the content.
+  
+       example:-
+   temp.forEach((li)=> {
+       temp.style.color='red';
+    })
+    
+
+     --> when we htmlcollection with classname we can convert 
+      it into array.
+      
+      const temp  = document.querySelectorAll('.my-heading')
+
+     const newItem = Array.from(my-heading);
+
+     --> now we can apply anything as it is an array
+      
+     newItem.map(()=> {
+        
+        })
+
+        OR
+
+      newItem.foreach(()=> {
+        
+        })
+      
+     ----> or any prototype function of array.
+*/
