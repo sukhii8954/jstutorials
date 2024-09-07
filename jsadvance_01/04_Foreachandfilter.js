@@ -29,6 +29,7 @@ const newnums = [1,2,3,4,5,6,7,8,9,10];
 //        num > 4 
    // implicit return, condition on basis of which it return the value
 // )
+// console.log(newvals);
  
 // const newvals = newnums.filter((num)=>{
 //       return  num > 4    // with curly bracket we have to write return keyword as it is explicit return
@@ -69,7 +70,7 @@ const books = [
  
 //  practice :- 
  
- const userBooks = books.filter((bk) => bk.genre=='History' )
+ const userBooks = books.filter((bk) => bk.genre ==='History' )
 
 //  console.log(userBooks);  // give data of books having only history genre
 

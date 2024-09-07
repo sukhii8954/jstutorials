@@ -47,23 +47,26 @@ const newNums = myNums
 const newVals = [1, 2, 3];
 
 const sumVal = newVals.reduce( function(acc,currval){
-    // console.log(`accumulator value: ${acc}`) // shows updated value after every sum
-    return acc +currval;
-},0)
+     // acc = value passed = 0  after comma down below
+    console.log(`accumulator value: ${acc}`) // shows updated value after every sum
+     // currval = actual values of array
+//     console.log(`accumulator value: ${currval}`) 
+    return  acc+currval;
+},0)   // 0 is the initial valued passed in acc
 
 /*
  NOTE:-value passed 0  to acc written after function scope. 
 It perfrom operation on each value of array and
 after every sum acc value is equal to that sum */
 
-// console.log(sumVal)
+console.log(sumVal)
 
 // Reduce Using Arrow function
 const newVal = [1, 2, 3];
 const sumNew = newVal.reduce( (acc,currval)=> acc+currval,0);
 // Output:- 6
 
-console.log(sumNew);
+// console.log(sumNew);
 
 // ********  Real product based Example:- ***********
 
@@ -90,4 +93,4 @@ const shoppingCart = [
 
 const Totalprice =shoppingCart.reduce((acc,item) => acc + item.price ,0);
 
-console.log(Totalprice);  // totalbill to pay 
+// console.log(Totalprice);  // totalbill to pay 
