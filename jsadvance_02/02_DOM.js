@@ -33,23 +33,23 @@
 
 // --> creating  elements in js
 
-const div = document.createElement('div')
-console.log(div);
-const heading = document.createElement('h1')
-console.log(heading);
+// const div = document.createElement('div')
+// console.log(div);
+// const heading = document.createElement('h1')
+// console.log(heading);
 
 
 // adding properties in this div element
 
-div.className = "main"
-div.id = Math.round(Math.random() *10+1) // unique no would be assign as ID
+// div.className = "main"
+// div.id = Math.round(Math.random() *10+1) // unique no would be assign as ID
 
 
 // custom attributes set aise krte h :-
 
-div.setAttribute("title", "chai aur code");
-div.style.backgroundColor="green";
-div.style.padding = "20px";
+// div.setAttribute("title", "chai aur code");
+// div.style.backgroundColor="green";
+// div.style.padding = "20px";
 
 // NOTE:-
 //  Attaching an element to DOM page to display:- 
@@ -58,10 +58,10 @@ div.style.padding = "20px";
 
 //  OR
 
- const addText =document.createTextNode("chai our Code");
- div.appendChild(addText);
+//  const addText =document.createTextNode("chai our Code");
+//  div.appendChild(addText);
 
- document.body.appendChild(div);
+//  document.body.appendChild(div);
 
 
 //  we can wrap the above whole div in function and 
