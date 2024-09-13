@@ -63,4 +63,54 @@
 // });
 
 
-// ## PROJECT 3
+// ## PROJECT 3 Digital clock()
+
+// HTML CODE:- 
+{/* <title>Your Local Time</title>
+{/* <div class="center">
+      <div id="banner"><span>Your local time</span></div>
+      <div id="clock"></div>
+    </div>
+    <script src="chaiaurcode.js"></script>
+  </body> */}
+
+//   css styling code:- 
+
+{/* <style>
+  body {
+    background-color: #212121;
+    color: #fff;
+  }
+  .center {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #clock {
+    font-size: 40px;
+    background-color: orange;
+    padding: 20px 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+</style> */}
+
+// JAVASCRIPT CODE :- 
+
+// const time = document.getElementById("clock");
+// // const time = document.querySelector('#clock');
+
+
+
+// setInterval(()=> {
+//   let date = new Date()
+//   // console.log(date.toLocaleTimeString()); 
+//   time.innerHTML=date.toLocaleTimeString();  
+// },1000)  // 1000 = 1 sec
+
+
+// *********************************
+
+// ## PROJECT 4 :- 
