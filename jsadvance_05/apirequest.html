@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api request</title>
+</head>
+<body style="background-color: #212121; color: aqua;">
+    <!-- Value	State	Description
+    0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete. -->
+    <div class = "card" id = 'contain'>
+         <div id="profile"></div>
+         <h3 id = 'followers'></h3>
+         <p id = 'para'></p>   
+        </div>
+        <button id ='btn'  style ="width: 100px; height: 50px; border-radius:10px ; border: 2px solid red; margin: 2px; padding: 2px"></button>
+</body>
+  <script src="api2.js"></script>
+</html>
