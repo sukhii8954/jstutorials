@@ -4,7 +4,7 @@
 //   return num * 5;
 // }
 
-// multiByFive.power = 2;
+// multiByFive.power = 10;
 // console.log(multiByFive(5)); // 25
 // console.log(multiByFive.power); // 2
 // console.log(multiByFive.prototype); // {} --> it refers to "this" by default context
@@ -22,7 +22,7 @@
 // declaring function holding properties of object (which are in prototype of browser)
 
 // create.prototype.increment = function () {
-//   this.score++;;
+//   this.score++;
 // };
 // create.prototype.printMe = function () {
 //   console.log(`price is: ${this.score}`);
@@ -34,6 +34,7 @@
 // chai.increment();
 // chai.printMe();
 
+// console.log(chai)
 
 /* now how the function which score have to be incremented ??
 
@@ -77,7 +78,7 @@ let  myHeros = ['spidermon' , 'batmon'];
 
 
 
-// object
+// // object
 let heroPower = {
     spidermon: 'sling',
     batmon: 'flying',
@@ -119,23 +120,23 @@ as array will also access to object methods this sukhman will also
 
 // *********** inheritance ****************
 
-const user = {
-    name: "sukhii",
-    email: "chai@google.com"
-}
-const teacher = {
-    namkeVideo: true
-}
+// const user = {
+//     name: "sukhii",
+//     email: "chai@google.com"
+// }
+// const teacher = {
+//     namkeVideo: true
+// }
 
-const assistant = {
-    isAvail: false
-}
+// const assistant = {
+//     isAvail: false
+// }
 
-const TAsupport = {
-    makeAssignemnt: "js assigment",
-    fullTime: true,
-    __proto__: assistant   // refering or borrowing properties of assistant object
-}
+// const TAsupport = {
+//     makeAssignemnt: "js assigment",
+//     fullTime: true,
+//     __proto__: assistant   // refering or borrowing properties of assistant object
+// }
 
 // prototypal inheritance :- (it is out dated not used in todays syntac)
 
@@ -147,18 +148,18 @@ const TAsupport = {
 // b --> in which we want to inherit
 // a --> of which we want to pass the properties 
 
-Object.setPrototypeOf(assistant,teacher); // inherited properties of teacher in assistant
+// Object.setPrototypeOf(assistant,teacher); // inherited properties of teacher in assistant
 
-let anotherUser ="chaiAurCode      ";
+// let anotherUser ="chaiAurCode";
 
 
-// injecting method in string prototype methods 
-String.prototype.trueLength = function(){
-    console.log(`${this}`);  // reference to the actual thing in anotherUser
-    console.log(`True length is: ${this.trim().length}`);
-}
+// // injecting method in string prototype methods 
+// String.prototype.trueLength = function(){
+//     console.log(`${this}`);  // reference to the actual thing in anotherUser
+//     console.log(`True length is: ${this.trim().length}`);
+// }
 
-anotherUser.trueLength()
+// anotherUser.trueLength()
 
 // example to test other strings length directly:- 
 
