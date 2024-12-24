@@ -1,15 +1,14 @@
 import express from 'express';  // module js import
-//   include type : module in package to use module js
+//   include type : module in package to use module js 
 const app = express();
-
 
 app.get('/', (req, res)=> {
     res.send('server is ready');
 });
 
 // get a list of 5 jokes
-
-app.get('/jokes', (req, res)=> {
+// url standard should  be setup like this
+app.get('/api/jokes', (req, res)=> {
     const jokes = [
         {
             id:1,
