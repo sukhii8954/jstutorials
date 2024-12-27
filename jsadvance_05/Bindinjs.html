@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind tutorial</title>
+</head>
+<body>
+
+     <button>button clicked</button>
+    
+
+     <script>
+        class React {
+            constructor(){
+                 this.library = "React"
+                  this.server = "http://localhost:3000"
+
+                 document.querySelector('button')             // binding used to bind the above values of this in below eventlistener
+                 .addEventListener('click', this.handleClick.bind(this))  // when the object of class created constructor provide the access of the button and adding event listner to it which tracking click event and getting accessing of handleClick
+                }
+
+            // requirement :- jaise hi page load ho object create hojye React ka 
+            //  ref mil jaye button ka on clicking the button 
+
+
+            handleClick(){
+                console.log("clicked");
+                console.log(this.library);
+            }
+        }
+
+
+        const app = new React()
+     </script>
+</body>
+</html>
