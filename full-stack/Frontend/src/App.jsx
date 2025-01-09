@@ -25,7 +25,7 @@ function App() {
       <h1>chai and full stack</h1>
       <p>Jokes: {jokes.length}</p>
 
-      {jokes.map((joke, idx) =>(  // <-- used parenthisis as we dont want to use return keyword
+      {jokes.map((joke) =>(  // <-- used parenthisis as we dont want to use return keyword
         <div key={joke.id}>
           <h3>{joke.title}</h3>
           <p>{joke.content}</p>
