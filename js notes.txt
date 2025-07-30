@@ -1,0 +1,24 @@
+primitive type (values type)
+1) these are the data types which are immutable means there value that cannot be change
+and primitive values are directly assign to a variable. the variable allocated at particular memory addr 
+and store the value assigned to it.
+
+--> value types are copied by value
+example : var x = 'apple' ; var y = x;  (x and y are two independent values in memory)
+
+2) value types uses stack memory for memory allocation.
+
+Non-primitve type or (reference type)
+1) these are the data types which are function , object , array these are mutable means,
+you're working with a reference to the data, not the data itself. the name of data type 
+hold the reference of the object memory address not  directly hold the object.
+
+--> reference type are copied by reference.
+var x = (title : 'apple'} ; var y = x;
+here y is pointing to the x value not creating the anthor object so any change in x will reflect the change in y also.
+
+2) reference type uses heap memory for memory allocation to store larger complex objects.
+
+
+ 
+
