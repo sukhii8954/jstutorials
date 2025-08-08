@@ -1,5 +1,5 @@
 import express from "express";
-import { getUserProfile, registerUser } from "../controllers/controllers";
+import { getUserProfile, registerUser } from "../controllers/controllers.js";
 
 const router = express.Router(); //allow us to define a specific routes and middleware for different parts  of an application
 
