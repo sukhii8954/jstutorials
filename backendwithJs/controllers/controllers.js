@@ -37,6 +37,7 @@ export const registerUser = async (req, res) => {
   }
 };
 
+
 export const getUserProfile = async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
