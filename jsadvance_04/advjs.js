@@ -8,7 +8,7 @@
 
 //  events to work on :- 
 // type , timeStamp , defaultprevented 
-// targt , toElement , srcElement, currentTarget
+// target , toElement , srcElement, currentTarget
 // clientX , clientY , screenX ,screenY , offset, altKey ,
 //  ctrlKey , shiftKey , keyCode
 
@@ -35,6 +35,11 @@
 // moving from outside to inside the element :- 
 
 //  ********* capturing mode  **************
+
+
+// document.getElementById('owl').addEventListener('click', (el)=> {
+//     console.log("owl clicked");
+// }, true) 
 
 // if we write true :- 
 // output :- 
@@ -91,8 +96,8 @@ document.querySelector('#imgs').addEventListener( 'click' , (e)=> {
 
     // 2nd approach :-
 
-   // getting ul from li  by writingn this down below:- 
-    //  getting removeimg ka parent node which is  ul 
+   // getting ul from li  by writing this down below:- 
+    //  getting remove img ka parent node which is  ul 
     // removeimg.parentNode.removeChild(removeimg);
 })
 

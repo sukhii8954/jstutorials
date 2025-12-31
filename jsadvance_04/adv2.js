@@ -9,12 +9,12 @@
 // }, 1000);
  
 
-// //      OR
+//      OR
 
-// const saySukh = () => {
-//     console.log("sukhman")
-// }
-// setTimeout(saySukh,2000);
+const saySukh = () => {
+    console.log("sukh")
+}
+setTimeout(saySukh,2000);
 
 
 
@@ -22,23 +22,23 @@
 
 //  changing innerhtml of H1 after 2 seconds 
 
-// const changeText = ()=> {
-//     document.querySelector('h1').innerHTML = "best JS series"
-// }
+const changeText = ()=> {
+    document.querySelector('h1').innerHTML = "best JS series"
+}
 
-// const stopby = setTimeout(changeText, 2000); // changing h1 text after  2 seconds
+const stopby = setTimeout(changeText, 2000); // changing h1 text after  2 seconds
 
 
 // // If I want to stop the event before the assgined time 
-// // we use  someevent  with clearTimeout() function
+// // we use  some event  with clearTimeout() function
 
 // // ***** this is how we can do that :-************
 
-// document.querySelector('#stop').addEventListener('click', ()=>{
-//     clearTimeout(stopby)
-//     console.log("stopped");
-// })
-
+document.querySelector('#stop').addEventListener('click', ()=>{
+    clearTimeout(stopby)
+    console.log("stopped");
+})
+// using # for id and . for class
 
 
 
