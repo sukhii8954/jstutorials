@@ -3,6 +3,8 @@
 // when object is formed from constructor then it is singleton object
 // Object.create (this is the how obj created with constructor)
 
+
+
 // object Literals:- 
 
   const obj = {

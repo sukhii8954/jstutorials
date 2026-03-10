@@ -1,17 +1,22 @@
 // data types preview as per interview prepration
-//   premitive data types and non- primitve data types
+//  premitive data types and non- primitve data types
 
-// primitive :- (call by value)
+// ############   primitive :- (call by value)  ###########
 
 //  string , number , boolean , null , undefined , symbol , BigInt
 
-// Reference ( Non premitive ):-  are those whose memory
-//  ref are directly allocated to another vale
+
+
+
+// #########   Reference ( Non premitive ):- ###########
+
+//--->  are those whose memory ref are directly allocated to another value
 
 // Array , objects ,functions 
  
 
-// primitive :- 
+// primitive  theory:- 
+
 //  js is dynamically typed lang,such that we dont have to write data type 
 // type checking occurs at runtime, and variables do not have a fixed type 
 // that is enforced by the compiler.  we can declare a variable without 
@@ -19,19 +24,65 @@
 //  assigned to it.
 
 // both int and float values includes in number 
-// const score = 100; 
-// const val = 100.4; 
+const score = 100; 
+const val = 100.4; 
+//  =========  OR ==========
+let anotherBalance  = new Number(120);
 
-// const logornot = false; // boolean type 
-// const temp =null; 
-    
-// let userEmail ;  // undefined value 
+// console.log(anotherBalance); // prints in array format
+console.log(anotherBalance.valueOf()); // prints direct value
+console.log(score);
 
 
-// // if we pass the same value in 2 different symbol we get different results 
-// const  ids = Symbol('sukhii');
-// const anotherId = Symbol('sukhii');
+console.log(typeof score);
+console.log(typeof anotherBalance);  // object  --> non premitive
 
+// ================================================================
+
+
+// boolean type 
+
+const logornot = false; 
+
+//================ Null and Undefined =================
+
+const temp =null; // we have assign null to the variable to show its null
+console.log(temp); 
+let userEmail ;  // undefined value --> its shows it exist but value is undefined
+console.log(userEmail)
+
+
+// ================= String =======================
+
+
+  let myString = "hello";
+  let anotherString = 'Hola';
+  let userName = "Sukhii"
+
+
+  let oldGreet = myString + " " + 'Sukhii';
+  console.log(oldGreet);
+
+  // using back ticks to handle dynamically
+
+  let greetmsg = `Hello ${userName} !`;
+  console.log(greetmsg)
+
+  let demoOne = ` value is ${2 * 2 }`;
+ console.log(demoOne);
+
+
+
+// if we pass the same value in 2 different symbol we get different results 
+
+
+// Symbol -> it guarantees the uniqueness -> it is a built in object whose constructor returns a symbol
+// it create a new symbol every single time
+
+const  ids = Symbol('sukhii');
+const anotherId = Symbol('sukhii');
+
+// even the values are same still they are different 
 // console.log(ids===anotherId);  // gives false 
 
 
@@ -43,7 +94,7 @@
 
 
 
-// array
+// ============== array ==============
 
 //  const DC = ["soanpari", "shaktimaan", "power rangers"];
 

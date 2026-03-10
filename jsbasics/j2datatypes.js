@@ -25,9 +25,9 @@
 // //************ */ datatypes conversion ****************
 
 // // d3javascripts :- 
-  
+
 // // let num ="22da"
-  
+
 // // console.log(typeof num)
 
 // // let intonumber =Number(num)
@@ -50,58 +50,101 @@
 // // let v2 =1; 
 // // let value= Boolean(v2);
 // // console.log(num)  
- 
+
 // //  0-> false 
 // //    1 -> true
 // // "" -> false 
 // //   "sukhman" : non empty string -> true
- 
+
 // let somnum =220;
-  
+
 // let converttostring = String(somnum);
 
 // // it shows value same but yes it got converted into string
 // console.log(converttostring)  // 220 
 //  console.log(typeof converttostring)   //string 
- 
+
 
 // **************** operations *******************
 
-  
-// let str = "sukii"; 
-// let str1  = "man"
 
-// let str2 = str+str1 ; // concating the string 
+let str = "sukii";
+let str1 = "man"
+
+let str2 = str + str1; // concating the string 
 
 
-// let x = 2 
-//  let y = x++ 
-//  // prefix opr first use the value then increase it 
-// //  console.log(`x:${x}, y:${y}`)   
+let x = 2
+let y = x++
+// prefix opr first use the value then increase it 
+//  console.log(`x:${x}, y:${y}`)  
 
-//  let a = 2 
-//  let b = ++a 
-// // postfix first increase the value then use it or print it 
-//   console.log(`a :${a}, b: ${b}`);
+let score = 110;
+console.log(score++);  // it print the same value then increment it
 
-// let val = Number("0x11") 
-// // it converts by hexadecimnal conversion   1* 16^1 +  1*16^0  =17 0x indicates its a decimal no
-// console.log(val)
+
+let amount = 100;
+console.log(++amount); // it first increment the value then print the updated value
+
+
+
+let a = 2
+let b = ++a
+// postfix first increase the value then use it or print it 
+console.log(`a :${a}, b: ${b}`);
+
+let val = Number("0x11")
+// it converts by hexadecimnal conversion   1* 16^1 +  1*16^0  =17 0x indicates its a decimal no
+console.log(val)
+
+
+
 
 
 // ******************** comp of datatypes in js *****************
-  
-  // comparison and equality check are different in js 
-  // ex:- 
-   
-  // console.log(null==0);
-  // console.log(null>=0);  // it convert null = 0 here 
+
+// comparison and equality check are different in js 
+// ex:- 
+
+console.log(null == 0);
+console.log(null >= 0);  // it convert null = 0 here 
 
 
-  // strict check  we use ===
-    
-  console.log("2"===2) ;// here it strictly check the value and its datatype also
-  console.log("2"==2); // here it convert string into int and gives true 
+let num1 = 2;
+let num2 = 6;
+let num3 = 2;
+
+console.log(num1 == num3) // true
+console.log(num2 != num3); // true 
+
+// strict check  we use ===
+
+console.log("2" === 2);// here it strictly check the value and its datatype also
+console.log("2" == 2); // here it convert string into int and gives true 
 
 
- 
+//  ========== logical operator ===========
+
+// && -> and
+// || -> OR
+// ! -> not (reverse)
+
+let isloggedin = true;
+let ispaid = false;
+
+console.log(isloggedin && ispaid); // true && false => results in false 
+
+let isEmailuser = true;
+let isGoogleUser = false;
+
+console.log(isEmailuser || isGoogleUser) // either one option True => results true
+
+
+
+// operator precendence
+
+let scores = (((2 * 3) + 2) - 1);
+console.log(scores);  // 7
+
+// operator priorties or precendence
+
